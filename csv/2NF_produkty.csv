@@ -1,0 +1,11 @@
+ID_produktu;Název produktu;Kategorie produktu;Cena za kus;ID_dodavatele
+P1;Hrnky sada 6ks;Kuchyň;150;D1
+P2;Talíře sada 4ks;Kuchyň;200;D1
+P3;Mixér Turbo 3000;Elektro;1200;D2
+P4;Kniha - Umění války;Literatura;300;D3
+P5;Notebook ProBook;Elektro;15000;D4
+P6;Sluchátka Bass X;Elektro;800;D5
+P7;Toustovač QuickToast;Kuchyň;700;D2
+P8;Kniha - Duna;Literatura;450;D3
+P9;Kniha - 1984;Literatura;320;D3
+P10;Bezdrátová myš Ergo;Elektro;450;D4

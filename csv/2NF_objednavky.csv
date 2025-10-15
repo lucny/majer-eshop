@@ -1,0 +1,10 @@
+ID_objednavky;Datum objednávky;Způsob platby;Stav objednávky;ID_zakaznika
+1001;1.12.2024;kartou;vyřízena;Z1
+1002;2.12.2024;dobírka;vyřízena;Z2
+1003;3.12.2024;převod;zpracovává se;Z3
+1004;3.12.2024;kartou;vyřízena;Z4
+1005;4.12.2024;dobírka;zrušena;Z5
+1006;5.12.2024;kartou;vyřízena;Z6
+1007;5.12.2024;převod;zpracovává se;Z7
+1008;6.12.2024;kartou;vyřízena;Z2
+1009;7.12.2024;dobírka;vyřízena;Z4

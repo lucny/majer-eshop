@@ -1,0 +1,11 @@
+Číslo objednávky;Datum objednávky;Způsob platby;Stav objednávky;Jméno zákazníka;Adresa zákazníka;E-mail zákazníka;Název produktu;Kategorie produktu;Cena za kus;Počet kusů;Název dodavatele;Město dodavatele
+1001;1.12.2024;kartou;vyřízena;Jan Novák;Praha 1;novak.jan@email.cz;Hrnky sada 6ks;Kuchyň;150;2;Porcelán s.r.o.;Karlovy Vary
+1001;1.12.2024;kartou;vyřízena;Jan Novák;Praha 1;novak.jan@email.cz;Talíře sada 4ks;Kuchyň;200;1;Porcelán s.r.o.;Karlovy Vary
+1002;2.12.2024;dobírka;vyřízena;Petr Svoboda;Brno;svoboda.p@email.cz;Mixér Turbo 3000;Elektro;1200;1;Elektro CZ;Ostrava
+1003;3.12.2024;převod;zpracovává se;Eva Králová;Plzeň;eva.kralova@email.cz;Kniha - Umění války;Literatura;300;1;Knihy s.r.o.;Praha
+1004;3.12.2024;kartou;vyřízena;Lucie Dvořáková;Olomouc;lucie.d@email.cz;Notebook ProBook;Elektro;15000;1;TechnoMarket;Brno
+1005;4.12.2024;dobírka;zrušena;Martin Hruška;Zlín;m.hruska@email.cz;Sluchátka Bass X;Elektro;800;2;ZvukTech;Praha
+1006;5.12.2024;kartou;vyřízena;Alena Švecová;Jihlava;alena@email.cz;Toustovač QuickToast;Kuchyň;700;1;Elektro CZ;Ostrava
+1007;5.12.2024;převod;zpracovává se;Tomáš Vacek;Hradec Králové;vacek@email.cz;Kniha - Duna;Literatura;450;1;Knihy s.r.o.;Praha
+1008;6.12.2024;kartou;vyřízena;Petr Svoboda;Brno;svoboda.p@email.cz;Kniha - 1984;Literatura;320;1;Knihy s.r.o.;Praha
+1009;7.12.2024;dobírka;vyřízena;Lucie Dvořáková;Olomouc;lucie.d@email.cz;Bezdrátová myš Ergo;Elektro;450;1;TechnoMarket;Brno
