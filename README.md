@@ -1,7 +1,26 @@
+# 🛒 Návrh relační databáze pro e-shop U Majera
+
+Tento repozitář obsahuje výukový projekt, jehož cílem je navrhnout databázový model pro fiktivní e-shop „U Majera“. Studentům je předloženo realistické zadání od zákazníka, který dosud uchovává objednávky v jediné tabulce. Úkolem je tuto tabulku postupně analyzovat a převést do plně normalizovaného databázového modelu (1NF, 2NF, 3NF) a vytvořit k němu i správný ER diagram.
 
 ---
 
-## 🧾 Zadání od zákazníka – Databáze pro e-shop
+## 📋 Obsah
+
+- [🧾 Zadání od zákazníka – Databáze pro e-shop](#-zadání-od-zákazníka--databáze-pro-e-shop)
+- [📂 Příloha: Ukázková tabulka od zákazníka](#📂-příloha-ukázková-tabulka-od-zákazníka)
+- [🧠 Proč normalizujeme databázi a jak při tom postupovat](#🧠-proč-normalizujeme-databázi-a-jak-při-tom-postupovat)
+- [🧩 Úkol 1 – 1NF: Odstranění neatomických hodnot](#🧩-úkol-1-úprava-tabulky-do-1-normální-formy-1nf)
+- [🧩 Úkol 2 – 2NF: Odstranění částečných závislostí](#🧩-úkol-2-úprava-databáze-do-2-normální-formy-2nf)
+- [🧩 Úkol 3 – 3NF: Odstranění tranzitivních závislostí](#🧩-úkol-3-úprava-databáze-do-3-normální-formy-3nf)
+- [📊 Tvorba ER diagramu v dbdiagram.io](#tvorba-er-diagramu-pro-databázi-e-shopu)
+- [🛠️ Problémy a řešení při normalizaci](#problémy-a-řešení-při-normalizaci-databáze)
+- [📚 Další zdroje a návody](#📚-další-zdroje-a-návody)
+
+
+
+---
+
+# 🧾 Zadání od zákazníka – Databáze pro e-shop
 
 > Dobrý den,
 >
