@@ -422,7 +422,7 @@ Tímto krokem jsme oddělili informaci o **městu** do samostatné tabulky, kde 
 * Soubor: [3NF_dodavatele.csv](csv/3NF_dodavatele.csv)
 
 ### Řešení úkolů v Excelu
-* Soubor: [majer_eshop.xlsx](csv/majer_eshop.xlsx)
+* Soubor: [majer-eshop.xlsx](csv/majer-eshop.xlsx)
 
 ---
 
