@@ -7,14 +7,14 @@ Tento repozitář obsahuje výukový projekt, jehož cílem je navrhnout databá
 ## 📋 Obsah
 
 - [🧾 Zadání od zákazníka – Databáze pro e-shop](#-zadání-od-zákazníka--databáze-pro-e-shop)
-- [📂 Příloha: Ukázková tabulka od zákazníka](#📂-příloha-ukázková-tabulka-od-zákazníka)
-- [🧠 Proč normalizujeme databázi a jak při tom postupovat](#🧠-proč-normalizujeme-databázi-a-jak-při-tom-postupovat)
-- [🧩 Úkol 1 – 1NF: Odstranění neatomických hodnot](#🧩-úkol-1-úprava-tabulky-do-1-normální-formy-1nf)
-- [🧩 Úkol 2 – 2NF: Odstranění částečných závislostí](#🧩-úkol-2-úprava-databáze-do-2-normální-formy-2nf)
-- [🧩 Úkol 3 – 3NF: Odstranění tranzitivních závislostí](#🧩-úkol-3-úprava-databáze-do-3-normální-formy-3nf)
+- [📂 Příloha: Ukázková tabulka od zákazníka](#-příloha-ukázková-tabulka-od-zákazníka)
+- [🧠 Proč normalizujeme databázi a jak při tom postupovat](#-proč-normalizujeme-databázi-a-jak-při-tom-postupovat)
+- [🧩 Úkol 1 – 1NF: Odstranění neatomických hodnot](#-úkol-1-úprava-tabulky-do-1-normální-formy-1nf)
+- [🧩 Úkol 2 – 2NF: Odstranění částečných závislostí](#-úkol-2-úprava-databáze-do-2-normální-formy-2nf)
+- [🧩 Úkol 3 – 3NF: Odstranění tranzitivních závislostí](#-úkol-3-úprava-databáze-do-3-normální-formy-3nf)
 - [📊 Tvorba ER diagramu v dbdiagram.io](#tvorba-er-diagramu-pro-databázi-e-shopu)
 - [🛠️ Problémy a řešení při normalizaci](#problémy-a-řešení-při-normalizaci-databáze)
-- [📚 Další zdroje a návody](#📚-další-zdroje-a-návody)
+- [📚 Další zdroje a návody](#-další-zdroje-a-návody)
 
 
 
