@@ -619,3 +619,80 @@ Všechny tři případy ukazují důležitý princip:
 
 ## SQL dump pro e-shop (MySQL verze)
 [SQL dump e-shopu](exports/majer_eshop.sql)
+
+---
+
+# 📚 Naplnění databáze daty
+
+Pro účely testování a ověření funkčnosti databáze můžeme použít **generátor náhodných dat**. Níže je odkaz na jednoduchý online nástroj, který umožňuje vytvořit testovací data podle zadané struktury tabulek. 
+
+### 🔧 [Mockaroo](https://mockaroo.com/)
+**Vlastnosti:**
+* 🟢 Zdarma pro základní použití.
+* 🧱 Umožňuje definovat vlastní schéma tabulek.
+* 📤 Export do CSV, SQL a dalších formátů.
+* 🧩 Vhodné pro generování realistických testovacích dat.
+**Postup:**
+1. Otevřete [Mockaroo](https://mockaroo.com/).
+2. Definujte schéma tabulek podle vašeho databázového modelu (např. `Zakaznici`, `Objednavky`, `Produkty` atd.).
+3. Nastavte počet řádků, které chcete vygenerovat pro každou tabulku.
+4. Exportujte data ve formátu SQL pro snadné vložení do vaší databáze.
+
+Další možnosti generování dat:
+* [Generate Data](https://generatedata.com/)
+* [Faker](https://faker.readthedocs.io/en/master/) (knihovna pro různé programovací jazyky)
+
+---
+## Knihovna Faker pro Python
+Pro generování testovacích dat v Pythonu můžete použít knihovnu **Faker**. Tato knihovna umožňuje snadno vytvářet realistická data pro různé účely, včetně jmen, adres, e-mailů, produktů a dalších.
+
+### Příklady použití:
+```python
+from faker import Faker
+fake = Faker()
+# Generování náhodného zákazníka
+customer_name = fake.name()
+customer_address = fake.address()
+customer_email = fake.email()
+# Generování náhodného produktu
+product_name = fake.word().title()
+product_price = fake.random_number(digits=3)
+print(f"Customer: {customer_name}, Address: {customer_address}, Email: {customer_email}")
+print(f"Product: {product_name}, Price: {product_price} CZK")
+```
+
+### Instalace knihovny
+```bash
+pip install Faker
+```
+
+Ukázkový skript pro generování dat pro e-shop je k dispozici v souboru: [generate_majer_eshop_data.py](scripts/generate_majer_eshop_data.py)
+
+---
+## Webscraping pro získání reálných dat
+Pro získání reálných dat o produktech, dodavatelích nebo zákaznících můžete využít techniku webscrapingu. Webscraping umožňuje automaticky stahovat a extrahovat informace z webových stránek. Jednou z nejpopulárnějších knihoven pro webscraping v Pythonu je **BeautifulSoup**.
+
+Níže je uveden jednoduchý příklad použití knihovny **BeautifulSoup** v Pythonu pro extrakci dat z webové stránky.
+
+### Příklad použití BeautifulSoup:
+```python
+import requests
+from bs4 import BeautifulSoup
+url = 'https://example.com/products'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+products = []
+for item in soup.select('.product-item'):
+    name = item.select_one('.product-name').text
+    price = item.select_one('.product-price').text
+    products.append({'name': name, 'price': price})
+print(products)
+```
+
+### Instalace knihoven
+```bash
+pip install beautifulsoup4 requests
+```
+
+Ukázkový skript pro webscraping je k dispozici v souboru: [scripts/webscraper.py](scripts/webscraper.py)
+
