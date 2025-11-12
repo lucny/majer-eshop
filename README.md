@@ -613,6 +613,68 @@ Všechny tři případy ukazují důležitý princip:
 > * vazbu na původní entitu (např. produkty, objednávky, zákazníci).
 
 ---
+### 💡 Kompletní řešení datového modelu e-shopu
+
+```dbml
+Table zakaznici {
+  id_zakaznika varchar [pk]
+  jmeno varchar
+  email varchar
+  id_adresy int [ref: > adresy.id_adresy]
+}
+
+Table adresy {
+  id_adresy int [pk]
+  ulice varchar
+  cislo_popisne varchar
+  psc varchar
+  id_mesto int [ref: > mesto.id_mesto]
+}
+
+Table mesto {
+  id_mesto int [pk]
+  nazev varchar
+}
+
+Table objednavky {
+  id_objednavky int [pk]
+  datum date
+  stav varchar
+  id_zakaznika varchar [ref: > zakaznici.id_zakaznika]
+  id_zpusobu int [ref: > zpusoby_platby.id_zpusobu]
+}
+
+Table zpusoby_platby {
+  id_zpusobu int [pk]
+  popis varchar
+}
+
+Table produkty {
+  id_produktu varchar [pk]
+  nazev varchar
+  cena_za_kus int
+  id_kategorie int [ref: > kategorie_produktu.id_kategorie]
+  id_dodavatele varchar [ref: > dodavatele.id_dodavatele]
+}
+
+Table kategorie_produktu {
+  id_kategorie int [pk]
+  nazev varchar
+}
+
+Table dodavatele {
+  id_dodavatele varchar [pk]
+  nazev varchar
+  id_mesto int [ref: > mesto.id_mesto]
+}
+
+Table polozky_objednavky {
+  id_objednavky int [ref: > objednavky.id_objednavky]
+  id_produktu varchar [ref: > produkty.id_produktu]
+  pocet_kusu int
+  Note: "Primární klíč může být složený (id_objednavky, id_produktu)"
+}
+```
 
 ## Upravený ER diagram pro e-shop
 ![ER diagram e-shopu](images/majer_eshop_er_diagram_2.svg)
