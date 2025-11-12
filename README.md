@@ -728,7 +728,7 @@ print(f"Product: {product_name}, Price: {product_price} CZK")
 pip install Faker
 ```
 
-Ukázkový skript pro generování dat pro e-shop je k dispozici v souboru: [generate_majer_eshop_data.py](scripts/generate_majer_eshop_data.py)
+Ukázkový skript pro generování dat pro e-shop je k dispozici v souboru: [scripts/faker_data.py](scripts/faker_data.py)
 
 ---
 ## Webscraping pro získání reálných dat
